@@ -11,17 +11,35 @@ import {performance} from 'perf_hooks';
  *
  */
 
-// --- Time complexity O(n^2)
-function same(arr1, arr2) {
-  if (arr1.length !== arr2.length) return false;
+// --- Time complexity O(n)
+function validAnagram(first, second) {
+  if (first.length !== second.length) return false;
 
-  for (let i = 0; i < arr1.length; i++) {
-    const square = Math.pow(arr1[i], 2); // or `arr1[i] ** 2`
-    const correctIndex = arr2.indexOf(square);
+  const lookup = {};
 
-    if (correctIndex === -1) return false;
+  for (let i = 0; i < first.length; i++) {
+    const letter = first[i];
 
-    arr2.splice(correctIndex, 1);
+    // if letter exists, increment, otherwise set to 1
+    if (lookup[letter]) {
+      lookup[letter] += 1;
+    } else {
+      lookup[letter] = 1;
+    }
+  }
+
+  // eslint-disable-next-line no-console
+  console.log(lookup);
+
+  for (let i = 0; i < second.length; i++) {
+    const letter = second[i];
+
+    // can't find letter or letter is zero then it's not an anagram
+    if (!lookup[letter]) {
+      return false;
+    } else {
+      lookup[letter] -= 1;
+    }
   }
 
   return true;
@@ -29,7 +47,7 @@ function same(arr1, arr2) {
 
 (function run() {
   const T1 = performance.now();
-  const R = same([1, 2, 3], [4, 1, 9]);
+  const R = validAnagram('anagrams', 'nagaramm');
   const T2 = performance.now();
 
   // eslint-disable-next-line no-console
