@@ -1,7 +1,7 @@
 {
   "recommendations": [
     "dbaeumer.vscode-eslint",
-    "formulahendry.code-runner",
+    "miramac.vscode-exec-node",
     "prettier.prettier-vscode",
     "yzhang.markdown-all-in-one"
   ]

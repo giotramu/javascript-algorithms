@@ -1,4 +1,4 @@
-import {performance} from 'perf_hooks';
+const calcTimeElapsed = require('../../../../_helpers/calcTimeElapsed');
 
 /**
  * Write a function called `sumZero` which accepts a sorted array of integers.
@@ -21,13 +21,10 @@ function sumZero(arr) {
 }
 
 (function run() {
-  const T1 = performance.now();
-  const R = sumZero([-3, -2, -1, 0, 1, 2, 3]);
-  const T2 = performance.now();
+  const r = sumZero([-3, -2, -1, 0, 1, 2, 3]);
 
   // eslint-disable-next-line no-console
-  console.log(`Result: ${R}`);
+  console.log('Result: ', r);
 
-  // eslint-disable-next-line no-console
-  console.log(`Time elapsed: ${(T1 - T2) / 1000} seconds.`);
+  calcTimeElapsed(() => r);
 })();

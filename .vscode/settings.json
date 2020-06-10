@@ -18,10 +18,5 @@
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  },
-  "code-runner.defaultLanguage": "javascript",
-  "code-runner.showExecutionMessage": false,
-  "code-runner.executorMapByGlob": {
-    "*.mjs": "node --experimental-modules"
   }
 }
