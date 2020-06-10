@@ -1,4 +1,4 @@
-import {performance} from 'perf_hooks';
+const calcTimeElapsed = require('../../../_helpers/calcTimeElapsed');
 
 function countDown(num) {
   let count = num;
@@ -16,10 +16,6 @@ function countDown(num) {
 }
 
 (function run() {
-  const T1 = performance.now();
-  countDown(10);
-  const T2 = performance.now();
-
-  // eslint-disable-next-line no-console
-  console.log(`Time elapsed: ${(T1 - T2) / 1000} seconds.`);
+  const r = countDown(10);
+  calcTimeElapsed(() => r);
 })();

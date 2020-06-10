@@ -1,4 +1,4 @@
-import {performance} from 'perf_hooks';
+const calcTimeElapsed = require('../../../../_helpers/calcTimeElapsed');
 
 /**
  * Implement a function called countUniqueValues, which accepts a sorted array, and counts the unique values in the array.
@@ -28,13 +28,10 @@ function countUniqueValues(arr) {
 }
 
 (function run() {
-  const T1 = performance.now();
-  const R = countUniqueValues([1, 2, 2, 5, 7, 7, 99]);
-  const T2 = performance.now();
+  const r = countUniqueValues([1, 2, 2, 5, 7, 7, 99]);
 
   // eslint-disable-next-line no-console
-  console.log(`Result: ${R}`);
+  console.log('Result: ', r);
 
-  // eslint-disable-next-line no-console
-  console.log(`Time elapsed: ${(T1 - T2) / 1000} seconds.`);
+  calcTimeElapsed(() => r);
 })();

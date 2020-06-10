@@ -1,4 +1,4 @@
-import {performance} from 'perf_hooks';
+const calcTimeElapsed = require('../../../../_helpers/calcTimeElapsed');
 
 /**
  * Write a function called `same` which accepts two arrays.
@@ -28,13 +28,10 @@ function same(arr1, arr2) {
 }
 
 (function run() {
-  const T1 = performance.now();
-  const R = same([1, 2, 3], [4, 1, 9]);
-  const T2 = performance.now();
+  const r = same([1, 2, 3], [4, 1, 9]);
 
   // eslint-disable-next-line no-console
-  console.log(`Result: ${R}`);
+  console.log('Result: ', r);
 
-  // eslint-disable-next-line no-console
-  console.log(`Time elapsed: ${(T1 - T2) / 1000} seconds.`);
+  calcTimeElapsed(() => r);
 })();

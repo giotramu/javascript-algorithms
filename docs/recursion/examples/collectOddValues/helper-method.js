@@ -1,4 +1,4 @@
-import {performance} from 'perf_hooks';
+const calcTimeElapsed = require('../../../_helpers/calcTimeElapsed');
 
 function collectOddValues(arr) {
   const result = [];
@@ -19,13 +19,10 @@ function collectOddValues(arr) {
 }
 
 (function run() {
-  const T1 = performance.now();
-  const R = collectOddValues([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-  const T2 = performance.now();
+  const r = collectOddValues([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
   // eslint-disable-next-line no-console
-  console.log(`Result: ${R}`);
+  console.log('Result: ', r);
 
-  // eslint-disable-next-line no-console
-  console.log(`Time elapsed: ${(T1 - T2) / 1000} seconds.`);
+  calcTimeElapsed(() => r);
 })();

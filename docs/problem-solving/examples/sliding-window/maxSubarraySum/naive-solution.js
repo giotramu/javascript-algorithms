@@ -1,4 +1,4 @@
-import {performance} from 'perf_hooks';
+const calcTimeElapsed = require('../../../../_helpers/calcTimeElapsed');
 
 /**
  * Write a function called `maxSubarraySum` which accepts an array of integers and a number called n.
@@ -33,13 +33,10 @@ function maxSubArraySum(arr, num) {
 }
 
 (function run() {
-  const T1 = performance.now();
-  const R = maxSubArraySum([1, 2, 5, 2, 8, 1, 5], 2);
-  const T2 = performance.now();
+  const r = maxSubArraySum([1, 2, 5, 2, 8, 1, 5], 2);
 
   // eslint-disable-next-line no-console
-  console.log(`Result: ${R}`);
+  console.log('Result: ', r);
 
-  // eslint-disable-next-line no-console
-  console.log(`Time elapsed: ${(T1 - T2) / 1000} seconds.`);
+  calcTimeElapsed(() => r);
 })();
