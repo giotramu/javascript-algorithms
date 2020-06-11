@@ -1,6 +1,8 @@
 const {performance} = require('perf_hooks');
 
-module.exports = function calcTimeElapsed(cbFn) {
+module.exports = function calcTimeElapsed(cbFn, showLog = false) {
+  if (!showLog) return;
+
   const T1 = performance.now();
   cbFn();
   const T2 = performance.now();

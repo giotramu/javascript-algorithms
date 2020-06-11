@@ -1,5 +1,7 @@
 const calcTimeElapsed = require('../../../_helpers/calcTimeElapsed');
 
+module.exports = addUpTo;
+
 /**
  * Write a function called `addUpTo`,
  * that calculates the sum of all numbers from 1 up to (and including) some number n.
@@ -16,11 +18,6 @@ function addUpTo(n) {
   return total;
 }
 
-(function run() {
-  const r = addUpTo(1000000000);
-
-  // eslint-disable-next-line no-console
-  console.log('Result: ', r);
-
-  calcTimeElapsed(() => r);
-})();
+// --- Timing
+const r = addUpTo(1000000000);
+calcTimeElapsed(() => r);

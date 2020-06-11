@@ -1,4 +1,9 @@
 module.exports = {
   root: true,
-  extends: ['contactlab', 'prettier']
+
+  extends: ['contactlab', 'prettier'],
+
+  env: {
+    jest: true
+  }
 };

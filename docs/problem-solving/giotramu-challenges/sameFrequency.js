@@ -1,12 +1,8 @@
+module.exports = sameFrequency;
+
 /**
  * Write a function called `sameFrequency`.
  * Given two positive integers, find out if the two numbers have the same frequency of digits.
- *
- * sameFrequency(182, 281); // true
- * sameFrequency(34, 14); // false
- * sameFrequency(3589578, 5879385); // true
- * sameFrequency(22, 222); // false
- *
  */
 
 // --- Time complexity O(n)
@@ -35,16 +31,3 @@ function sameFrequency(int1, int2) {
 
   return true;
 }
-
-(function run() {
-  // TODO: Replace with test runner library
-  const tests = [
-    sameFrequency(182, 281), // true
-    sameFrequency(34, 14), // false
-    sameFrequency(3589578, 5879385), // true
-    sameFrequency(22, 222) // false
-  ];
-
-  // eslint-disable-next-line no-console
-  tests.forEach((test, i) => console.log(`Test ${i + 1}:`, test));
-})();
