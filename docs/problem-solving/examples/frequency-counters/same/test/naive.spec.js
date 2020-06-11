@@ -1,3 +1,4 @@
+const calcTimeElapsed = require('../../../../../_helpers/calcTimeElapsed');
 const same = require('../naive-solution');
 
 test(`
@@ -8,3 +9,7 @@ test(`
   expect(same([1, 2, 3], [1, 9])).toBe(false);
   expect(same([1, 2, 1], [4, 4, 1])).toBe(false); // must be same frequency
 });
+
+// --- Test the Time Complexity
+const r = same([1, 2, 3], [4, 1, 9]);
+calcTimeElapsed(() => r); // O(n^2)

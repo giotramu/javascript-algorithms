@@ -1,5 +1,3 @@
-const calcTimeElapsed = require('../../../_helpers/calcTimeElapsed');
-
 function sumRange(num) {
   let total = 1;
 
@@ -10,11 +8,4 @@ function sumRange(num) {
   return total;
 }
 
-(function run() {
-  const r = sumRange(5);
-
-  // eslint-disable-next-line no-console
-  console.log('Result: ', r);
-
-  calcTimeElapsed(() => r);
-})();
+module.exports = sumRange;

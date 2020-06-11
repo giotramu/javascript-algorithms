@@ -1,3 +1,4 @@
+const calcTimeElapsed = require('../../../../../_helpers/calcTimeElapsed');
 const sumZero = require('../refactored-solution');
 
 test(`
@@ -8,3 +9,7 @@ test(`
   expect(sumZero([-2, 0, 1, 3])).toBeUndefined();
   expect(sumZero([1, 2, 3])).toBeUndefined();
 });
+
+// --- Test the Time Complexity
+const r = sumZero([-3, -2, -1, 0, 1, 2, 3]);
+calcTimeElapsed(() => r); // O(n)

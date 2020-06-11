@@ -1,14 +1,3 @@
-const calcTimeElapsed = require('../../../../_helpers/calcTimeElapsed');
-
-module.exports = same;
-
-/**
- * Write a function called `same` which accepts two arrays.
- * The function should return true if every value in the array has it's corresponding value squared in the second array.
- * The frequency of values must be the same.
- */
-
-// --- Time complexity O(n^2)
 function same(arr1, arr2) {
   if (arr1.length !== arr2.length) return false;
 
@@ -24,6 +13,4 @@ function same(arr1, arr2) {
   return true;
 }
 
-// --- Timing
-const r = same([1, 2, 3], [4, 1, 9]);
-calcTimeElapsed(() => r);
+module.exports = same;

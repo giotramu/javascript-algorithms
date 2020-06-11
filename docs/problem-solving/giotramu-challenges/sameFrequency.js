@@ -1,11 +1,3 @@
-module.exports = sameFrequency;
-
-/**
- * Write a function called `sameFrequency`.
- * Given two positive integers, find out if the two numbers have the same frequency of digits.
- */
-
-// --- Time complexity O(n)
 function sameFrequency(int1, int2) {
   const sInt1 = int1.toString();
   const sInt2 = int2.toString();
@@ -31,3 +23,5 @@ function sameFrequency(int1, int2) {
 
   return true;
 }
+
+module.exports = sameFrequency;

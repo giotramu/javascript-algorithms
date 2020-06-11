@@ -1,5 +1,3 @@
-const calcTimeElapsed = require('../../../_helpers/calcTimeElapsed');
-
 function countDown(num) {
   let count = num;
 
@@ -15,7 +13,4 @@ function countDown(num) {
   countDown(count);
 }
 
-(function run() {
-  const r = countDown(10);
-  calcTimeElapsed(() => r);
-})();
+module.exports = countDown;

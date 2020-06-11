@@ -1,3 +1,4 @@
+const calcTimeElapsed = require('../../../../../_helpers/calcTimeElapsed');
 const validAnagram = require('../challenge');
 
 test(`Given two strings, write a function to determine if the second string is an anagram of the first.`, () => {
@@ -9,3 +10,7 @@ test(`Given two strings, write a function to determine if the second string is a
   expect(validAnagram('qwerty', 'qeywrt')).toBe(true);
   expect(validAnagram('texttwisttime', 'timetwisttext')).toBe(true);
 });
+
+// --- Test the Time Complexity
+const r = validAnagram('anagrams', 'nagaramm');
+calcTimeElapsed(() => r); // O(n)

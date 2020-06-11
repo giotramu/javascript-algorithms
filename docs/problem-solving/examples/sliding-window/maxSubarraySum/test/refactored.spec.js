@@ -1,3 +1,4 @@
+const calcTimeElapsed = require('../../../../../_helpers/calcTimeElapsed');
 const maxSubarraySum = require('../refactored-solution');
 
 test(`The function should calculate the maximum sum of n consecutive elements in the array.`, () => {
@@ -7,3 +8,7 @@ test(`The function should calculate the maximum sum of n consecutive elements in
   expect(maxSubarraySum([4, 2, 1, 6, 2], 4)).toBe(13);
   expect(maxSubarraySum([], 4)).toBeNull();
 });
+
+// --- Test the Time Complexity
+const r = maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 2);
+calcTimeElapsed(() => r); // O(n)
