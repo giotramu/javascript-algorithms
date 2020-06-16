@@ -9,5 +9,4 @@ test(`Given two positive integers, find out if the two numbers have the same fre
 });
 
 // --- Test the Time Complexity
-const r = sameFrequency(182, 281);
-calcTimeElapsed(() => r); // O(n)
+calcTimeElapsed(() => sameFrequency(182, 281)); // O(n)

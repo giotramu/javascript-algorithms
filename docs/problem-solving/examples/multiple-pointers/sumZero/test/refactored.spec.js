@@ -11,5 +11,4 @@ test(`
 });
 
 // --- Test the Time Complexity
-const r = sumZero([-3, -2, -1, 0, 1, 2, 3]);
-calcTimeElapsed(() => r); // O(n)
+calcTimeElapsed(() => sumZero([-3, -2, -1, 0, 1, 2, 3])); // O(n)

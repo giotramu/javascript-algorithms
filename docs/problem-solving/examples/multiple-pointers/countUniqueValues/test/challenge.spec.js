@@ -9,5 +9,4 @@ test(`Accepts a sorted array, and counts the unique values in the array. There c
 });
 
 // --- Test the Time Complexity
-const r = countUniqueValues([1, 2, 2, 5, 7, 7, 99]);
-calcTimeElapsed(() => r); // O(n)
+calcTimeElapsed(() => countUniqueValues([1, 2, 2, 5, 7, 7, 99])); // O(n)

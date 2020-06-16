@@ -9,5 +9,4 @@ test(`Given a sorted array of integers and a target average, determine if there 
 });
 
 // --- Test the Time Complexity
-const r = averagePair([1, 3, 3, 5, 6, 7, 10, 12, 19], 8);
-calcTimeElapsed(() => r); // O(n)
+calcTimeElapsed(() => averagePair([1, 3, 3, 5, 6, 7, 10, 12, 19], 8)); // O(n)

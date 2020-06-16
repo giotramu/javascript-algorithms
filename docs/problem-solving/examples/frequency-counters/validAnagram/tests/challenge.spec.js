@@ -12,5 +12,4 @@ test(`Given two strings, write a function to determine if the second string is a
 });
 
 // --- Test the Time Complexity
-const r = validAnagram('anagrams', 'nagaramm');
-calcTimeElapsed(() => r); // O(n)
+calcTimeElapsed(() => validAnagram('anagrams', 'nagaramm')); // O(n)

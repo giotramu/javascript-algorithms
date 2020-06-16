@@ -8,7 +8,6 @@ function logAtLeast5(n) {
 }
 
 // --- Test the Time Complexity
-const r = logAtLeast5(5);
-calcTimeElapsed(() => r);
+calcTimeElapsed(() => logAtLeast5(5));
 
 module.exports = logAtLeast5;

@@ -7,9 +7,8 @@ test(`
  `, () => {
   expect(same([1, 2, 3], [4, 1, 9])).toBe(true);
   expect(same([1, 2, 3], [1, 9])).toBe(false);
-  expect(same([1, 2, 1], [4, 4, 1])).toBe(false); // must be same frequency
+  expect(same([1, 2, 1], [4, 4, 1])).toBe(false); // Must be same frequency
 });
 
 // --- Test the Time Complexity
-const r = same([1, 2, 3], [4, 1, 9]);
-calcTimeElapsed(() => r); // O(n)
+calcTimeElapsed(() => same([1, 2, 3], [4, 1, 9])); // O(n)
