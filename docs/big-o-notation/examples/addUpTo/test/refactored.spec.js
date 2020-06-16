@@ -6,5 +6,4 @@ test(`Calculates the sum of all numbers from 1 up to (and including) some number
 });
 
 // --- Test the Time Complexity
-const r = addUpTo(1000000000);
-calcTimeElapsed(() => r); // O(1)
+calcTimeElapsed(() => addUpTo(1000000000)); // O(1)

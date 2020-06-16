@@ -9,5 +9,4 @@ test(`Given two strings, checks whether the characters in the first string form 
 });
 
 // --- Test the Time Complexity
-const r = isSubsequence('abc', 'abracadabra');
-calcTimeElapsed(() => r); // O(n)
+calcTimeElapsed(() => isSubsequence('abc', 'abracadabra')); // O(n)

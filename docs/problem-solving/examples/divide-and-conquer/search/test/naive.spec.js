@@ -11,5 +11,4 @@ test(`If the value is not found, return '-1'`, () => {
 });
 
 // --- Test the Time Complexity
-const r = search([1, 2, 3, 4, 5, 6], 4);
-calcTimeElapsed(() => r); // O(n) / Linear search
+calcTimeElapsed(() => search([1, 2, 3, 4, 5, 6], 4)); // O(n) / Linear search

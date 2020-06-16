@@ -10,5 +10,4 @@ test(`The function should calculate the maximum sum of n consecutive elements in
 });
 
 // --- Test the Time Complexity
-const r = maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 2);
-calcTimeElapsed(() => r); // O(n)
+calcTimeElapsed(() => maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 2)); // O(n)

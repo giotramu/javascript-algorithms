@@ -8,5 +8,4 @@ test(`Given a variable number of arguments, checks whether there are any duplica
 });
 
 // --- Test the Time Complexity
-const r = areThereDuplicates(182, 281, 300);
-calcTimeElapsed(() => r); // O(n)
+calcTimeElapsed(() => areThereDuplicates(182, 281, 300)); // O(n)
