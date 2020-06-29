@@ -21,7 +21,7 @@
     "test:watch": "npm run test -- --watch"
   },
   "devDependencies": {
-    "eslint": "^7.3.0",
+    "eslint": "^7.3.1",
     "eslint-config-contactlab": "^5.0.0",
     "eslint-config-prettier": "^6.11.0",
     "husky": "^4.2.5",
