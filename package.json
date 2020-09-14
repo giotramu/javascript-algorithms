@@ -24,7 +24,7 @@
     "eslint": "^7.8.1",
     "eslint-config-contactlab": "^5.0.0",
     "eslint-config-prettier": "^6.11.0",
-    "husky": "^4.2.5",
+    "husky": "^4.3.0",
     "jest": "^26.4.2",
     "jest-cli": "^26.4.2",
     "prettier": "^2.1.1",
