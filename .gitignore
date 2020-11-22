@@ -1,7 +1,6 @@
 .cache
-.env*
 .DS_Store
-*lock
+.env*
 *log
-node_modules
+node_modules/
 Thumbs.db
