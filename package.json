@@ -31,7 +31,7 @@
     "*.js": "eslint --fix"
   },
   "devDependencies": {
-    "@giotramu/prettier-config": "^1.1.0",
+    "@giotramu/prettier-config": "^1.1.1",
     "eslint": "^7.14.0",
     "eslint-config-contactlab": "^5.0.0",
     "eslint-config-prettier": "^6.15.0",
