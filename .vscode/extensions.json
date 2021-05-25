@@ -1,8 +1,8 @@
 {
   "recommendations": [
     "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
     "miramac.vscode-exec-node",
-    "prettier.prettier-vscode",
     "yzhang.markdown-all-in-one"
   ]
 }
